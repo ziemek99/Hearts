@@ -6,23 +6,23 @@ A Python implementation of Hearts. This project is a work in progress.
 Win all the hearts and the queen of spades, or none of these cards. Get as few points as possbile.
 
 # Rules
-* Each of the four player is dealt 13 cards.
+* Each of the four players is dealt 13 cards.
 
-* Before the round starts, all four players pass three cards, left, right, across, or no pass: the game cycles through these four instances with the passing of rounds.
+* Before the round starts, all four players pass three cards left, right, across, or no pass: the game cycles through these four instances with the passing of rounds.
 
-* The player with the two of clubs leads the first hand.
+* The player with the two of clubs leads the first trick.
 
-* A player must play a card with the suit of the card that lead the trick if he or she has one, otherwise any card may be played.
+* A player must play a card with the suit of the card that leads the trick if they have one, otherwise any card may be played.
 
 * The player with the high ranked card of the suit that lead wins the trick (aces are high).
 
-* A player may not play hearts or the queen of spades on the first hand.
+* A player may not play hearts or the queen of spades on the first hand (except if they don't have any other option).
 
-* After all the cards have been played, points are tallied for each player.
+* After all 13 tricks have been played, points are tallied for each player.
 
 * A player receives one point per heart and 13 points for the queen of spades.
 
-* If a player has all of the points, he or she has "shot the moon" and all other players get 26 points.
+* If a player has all of the points, they have "shot the moon", get 0 points and all other players get 26 points.
 
 * The game ends when the first player gets to 100. The winner is the player with the fewest points.
 
