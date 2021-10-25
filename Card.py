@@ -45,6 +45,11 @@ class Suit:
 		self.iden = iden
 		self.string = ''
 		suits = ["c", "d", "s", "h"]
+		'''
+		Uncomment the line below this comment to use UTF-8 suit symbols.
+		Perfect for inspecting autoplay, but manual play will be harder.
+		'''
+		# suits = ["♣", "♦", "♠", "♥"]
 		if iden == -1:
 			self.string = "Unset"
 		elif iden <= 3:

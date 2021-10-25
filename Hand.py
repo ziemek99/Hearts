@@ -6,6 +6,11 @@ diamonds = 1
 spades = 2
 hearts = 3
 suits = ["c", "d", "s", "h"]
+'''
+Uncomment the line below this comment to use UTF-8 suit symbols.
+Perfect for inspecting autoplay, but manual play will be harder.
+'''
+# suits = ["♣", "♦", "♠", "♥"]
 
 class Hand:
 	def __init__(self):
