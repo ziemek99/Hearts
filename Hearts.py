@@ -60,7 +60,7 @@ class Hearts:
 				break
 
 		if p is not None:
-			print(p.name + " shot the moon!")
+			print(p.name, "shot the moon!")
 			for player in self.players:
 				if player != p:
 					player.roundScore = 26
@@ -72,7 +72,7 @@ class Hearts:
 
 		print("\nScores:\n")
 		for player in self.players:
-			print(player.name + ": " + str(player.score))
+			print("{}: {}".format(player.name, player.score))
 			if player.score > highestScore:
 				p = player
 				highestScore = player.score
@@ -111,8 +111,8 @@ class Hearts:
 		p = self.players[self.trickWinner]
 		p.trickWon(self.currentTrick)
 		self.printCurrentTrick()
-		print(p.name + " won the trick.")
-		# print('Making new trick')
+		print(p.name, "won the trick.")
+		# print("Making new trick")
 		self.currentTrick = Trick()
 		print(self.currentTrick.suit)
 
@@ -244,13 +244,13 @@ class Hearts:
 	# print player's hand
 	def printPlayer(self, i):
 		p = self.players[i]
-		print(p.name + "'s hand: " + str(p.hand))
-		print(p.name + "'s round score: " + str(p.roundScore))
+		print("{}'s hand: {}".format(p.name, p.hand))
+		print("{}'s round score: {}".format(p.name, p.roundScore))
 
 	# print all players' hands
 	def printPlayers(self):
 		for p in self.players:
-			print(p.name + ": " + str(p.hand))
+			print("{}: {}".format(p.name, p.hand))
 
 	# show cards played in current trick
 	def printCurrentTrick(self):

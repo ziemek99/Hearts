@@ -15,7 +15,7 @@ class Player:
 	def getInput(self, option):
 		card = None
 		while card is None:
-			card = input(self.name + ", select a card to " + option + ": ")
+			card = input("{}, select a card to {}: ".format(self.name, option))
 		return card
 
 	def play(self, option='play', c=None, auto=False):
