@@ -6,7 +6,7 @@ queen = 12
 
 class Trick:
 	def __init__(self):
-		self.trick = [0, 0, 0, 0]
+		self.trick = [None, None, None, None]
 		self.suit = Suit(-1)
 		self.cardsInTrick = 0
 		self.points = 0
@@ -14,7 +14,7 @@ class Trick:
 		self.winner = -1
 
 	def reset(self):
-		self.trick = [0, 0, 0, 0]
+		self.trick = [None, None, None, None]
 		self.suit = -1
 		self.cardsInTrick = 0
 		self.points = 0

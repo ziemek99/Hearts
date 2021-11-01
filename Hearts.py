@@ -257,7 +257,7 @@ class Hearts:
 		trickStr = '\nCurrent table:\n'
 		trickStr += "Trick suit: " + self.currentTrick.suit.__str__() + "\n"
 		for i, card in enumerate(self.currentTrick.trick):
-			if self.currentTrick.trick[i] is not 0:
+			if self.currentTrick.trick[i] is not None:
 				trickStr += self.players[i].name + ": " + str(card) + "\n"
 			else:
 				trickStr += self.players[i].name + ": None\n"
